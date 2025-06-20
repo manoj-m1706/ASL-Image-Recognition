@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction Result</title>
+</head>
+<body>
+  <h2>Prediction: {{ prediction }}</h2>
+  <img src="{{ url_for('static', filename='uploads/' + image_filename) }}" width="200">
+  <br><br>
+  <a href="/">Try another</a> |
+  <a href="/logout">Logout</a>  <!-- 🔘 Added logout -->
+</body>
+</html>
